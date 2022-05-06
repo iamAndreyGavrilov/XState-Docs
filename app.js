@@ -64,12 +64,11 @@ const machine =
   });
 
 const machine2 =
-  /** @xstate-layout N4IgpgJg5mDOIC5gF8A0IB2B7CdGgGEBDAGxIAIBbIgYwAsBLDMAOmYHdzYAXI7scgEZ8IAA5ZYDbgywYRAD0QBaAEwA2AJwsArAGZB2gCwrtg3QA41aw+gCeyweYDsLA+bNG1jlbu0rkaCDEZFS0jMwi4pLSsgrKKhq6OvpGJmaW1nbxagAMrtruhjkeOYaC6gEBQA */
+  /** @xstate-layout N4IgpgJg5mDOIC5gF8A0IB2B7CdGgGEBDAGxIAIBbIgYwAsBLDMAOgFkGaAnLABzqzN8IXllgMALg0HCAHogC0AJgBsAThYBWAMwBGTQBYlm3doAcKlQfQBPRbrMB2FvrOnDKh0u2alyNCDEZFS0jEJIImKS0hhyikpq2lp6hsamFla28SoADC6abqbeFgZmTv7+QA */
   createMachine({
-    //не имеет начального состояния
-    type: "parallel",
-    states: {
-      "new state 1": {},
-    },
-    id: "Call machine",
-  });
+  type: "parallel",
+  states: {
+    Microphone: {},
+  },
+  id: "Call machine",
+});
